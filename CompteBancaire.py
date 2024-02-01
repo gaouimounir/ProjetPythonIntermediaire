@@ -4,5 +4,12 @@ class CompteBancaire:
         self.solde = solde
 
     @classmethod
-    def augmenterSolde(cls, compte, montant):
-        return list(map(lambda compte: cls(compte.numeroCompte, compte.solde + montant), compte))
+    def augmenterSolde(cls, listeComptes, montant):
+        return list(map(lambda compte: cls(compte.numeroCompte, compte.solde + montant), listeComptes))
+    
+    @staticmethod
+    def appliquerInteret(listeComptes, tauxInteret):
+        for compte in listeComptes:
+            compte.solde *= (1 + tauxInteret/100)
+    
+    
