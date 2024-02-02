@@ -12,4 +12,8 @@ class CompteBancaire:
         for compte in listeComptes:
             compte.solde *= (1 + tauxInteret/100)
     
+    @staticmethod
+    def filtrerComptes(listeComptes, soldeMin):
+        return list(filter(lambda compte: compte.solde >= soldeMin, listeComptes))
+    
     
