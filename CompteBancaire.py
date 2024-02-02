@@ -16,4 +16,5 @@ class CompteBancaire:
     def filtrerComptes(listeComptes, soldeMin):
         return list(filter(lambda compte: compte.solde >= soldeMin, listeComptes))
     
-    
+    def afficherInfo(self):
+        return print("Numéro de compte : " +{self.numeroCompte} + "Solde :" +{self.solde} +"€")
