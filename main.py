@@ -12,28 +12,29 @@ print(compte1.solde)
 print(compte2.solde)
 print(compte3.solde)
 
+print("Affichage des informations des comptes : ")
+for compte in listeComptes:
+    CompteBancaire.afficherInfo(compte)
 
-listeComptes = CompteBancaire.augmenterSolde(listeComptes, 100)
+
+listeComptesAugmenter = CompteBancaire.augmenterSolde(listeComptes, 100)
 
 print("Nouveau solde des comptes après augmentation : ")
-for compte in listeComptes:
+for compte in listeComptesAugmenter:
     print(compte.solde)
 
 
-CompteBancaire.appliquerInteret(listeComptes, 5)
+CompteBancaire.appliquerInteret(listeComptesAugmenter, 5)
 
 print("Nouveau solde des comptes après interet: ")
 for compte in listeComptes:
     print(compte.solde)
 
 
-compteFiltrer = CompteBancaire.filtrerComptes(listeComptes, 1000)
+compteFiltrer = CompteBancaire.filtrerComptes(listeComptesAugmenter, 1000)
 
 print("Solde des comptes après filtrage : ")
 for compte in compteFiltrer:
     print(compte.solde)
 
 
-CompteBancaire.afficherInfo(compte1)
-CompteBancaire.afficherInfo(compte2)
-CompteBancaire.afficherInfo(compte3)
