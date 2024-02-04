@@ -1,7 +1,8 @@
-Gestion de Comptes Bancaires
+## Gestion de Comptes Bancaires
+
 Cette classe Python, CompteBancaire, a été créée pour faciliter la gestion de comptes bancaires. Elle inclut des méthodes permettant d'augmenter le solde, d'appliquer des intérêts, de filtrer les comptes selon le solde, et d'afficher les informations des comptes.
 
-Fonctionnalités
+# Fonctionnalités
 Création de Comptes :
 
 La classe CompteBancaire permet de créer des objets de type compte bancaire en spécifiant le numéro de compte et le solde initial.
